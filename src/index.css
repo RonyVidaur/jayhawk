@@ -16,30 +16,6 @@ body {
   background-color: var(--base);
 }
 
-.animate {
-	transition: all 0.1s;
-}
-
-.action-button {
-  padding: 10px 40px;
-  margin: 0px 10px 10px 0px;
-  border-radius: 10px;
-	font-size: 25px;
-	color: #FFF;
-	text-decoration: none;
-}
-
-.green {
-	background-color: #82BF56;
-	border-bottom: 5px solid #669644;
-	text-shadow: 0px -2px #669644;
-}
-
-.action-button:active {
-	transform: translate(0px,5px);
-  border-bottom: 1px solid;
-}
-
 .logo {
   height: 100px;
   width: 100px;
@@ -65,11 +41,13 @@ body {
   box-shadow: 0 4px 0 var(--accent-dark), 0 5px 5px 1px rgba(0, 0, 0, 0.4);
   transition: all 0.15s ease-in-out;
 }
+
 .button:hover {
   background-color: #1ACC9E;
   text-shadow: 0 -1px -1px #c4402f;
   box-shadow: 0 4px 0 var(--accent), 0 5px 5px 1px rgba(0, 0, 0, 0.4);
 }
+
 .button:active {
   margin-top: -18px;
   box-shadow: none;
