@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.left-half {
+  background-color: #ffffff;
+  flex: 3;
+  padding: 1rem;
+}
+
+.right-half {
+  color: #FEFEFE;
+  background-color: #36373C;
+  flex: 2;
+  padding: 1rem;
+}
