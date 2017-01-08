@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react'
 import TextField from '../common/TextField'
+import Button from '../common/Button'
 
 class SignupForm extends React.Component {
 
@@ -46,7 +47,7 @@ class SignupForm extends React.Component {
           value={this.state.password}
           label="password"
                     />
-        <button href="" type="submit" className="button">Sign Up</button>
+        <Button href="" type="submit" primary>Sign Up</Button>
       </form>
 
     )
