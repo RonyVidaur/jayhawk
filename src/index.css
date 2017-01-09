@@ -1,3 +1,4 @@
+/* general rules for the application */
 @font-face {
   font-family: Muli;
   src: url(./assets/fonts/Muli-Regular.ttf);
@@ -15,28 +16,16 @@
   --input-color-aux: #8B8C76;
 }
 
-
-
 body {
-
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
   background-color: var(--base);
   font-family: 'Muli';
-}
-
-.logo {
-  height: 100px;
-  width: 100px;
-}
-
-.mini-logo {
-  width: 60px;
-  height: 60px;
 }
 
 h1 {
   font-size: 60px;
   text-align: center;
 }
+
+/* to convert on styled components */
