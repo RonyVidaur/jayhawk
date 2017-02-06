@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 import SignupForm from './signup/SignupForm'
 
 class FormHolder extends React.Component {

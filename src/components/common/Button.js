@@ -17,7 +17,6 @@ const Button = styled.button`
   position: relative;
   width: 228px;
   height: 34px;
-  margin-left: 10px;
   text-shadow: 0 -1px -1px #af3a2a;
   box-shadow: 0 4px 0 ${accent}, 0 5px 5px 1px rgba(0, 0, 0, 0.4);
   transition: all 0.15s ease-in-out;

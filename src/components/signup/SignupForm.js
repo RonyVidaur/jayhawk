@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 import TextField from '../common/TextField'
 import Button from '../common/Button'
 
@@ -10,9 +10,15 @@ class SignupForm extends React.Component {
       username: '',
       email: '',
       password: '',
-      passwordConfirmation : '',
+      passwordConfirmation: '',
       errors: {}
     }
+    this.onChange = this.onChange.bind(this)
+    this.onSubmit = this.onSubmit.bind(this)
+}
+
+  onChange(e) {
+    this.setState({ [e.target.name]: e.target.value})
   }
 
   onSubmit(e) {
@@ -21,33 +27,40 @@ class SignupForm extends React.Component {
   }
 
   render () {
-    const { errors } = this.state
     return (
       <form onSubmit={this.onSubmit}>
         <h2>Join the community</h2>
+
         <TextField
-          field={this.state.username}
-          placeholder="choose wisely"
+          field='username'
           type="text"
+          onChange={this.onChange}
           value={this.state.username}
-          label="user"
+          label="username"
                     />
         <TextField
-          field={this.state.email}
-          placeholder="E-mail address"
+          field="email"
           type="text"
+          onChange={this.onChange}
           value={this.state.email}
           label="email"
                     />
 
         <TextField
-          field={this.state.password}
-          placeholder=""
+          field='password'
           type="password"
+          onChange={this.onChange}
           value={this.state.password}
           label="password"
                     />
-        <Button href="" type="submit" primary>Sign Up</Button>
+        <TextField
+          field='passwordConfirmation'
+          type="password"
+          onChange={this.onChange}
+          value={this.state.passwordConfirmation}
+          label="Confirm password"
+                    />
+      <Button href="" type="submit" primary>Sign Up</Button>
       </form>
 
     )
