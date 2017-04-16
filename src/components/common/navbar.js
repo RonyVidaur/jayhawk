@@ -1,10 +1,12 @@
-import styled from 'styled-components'
-
-const NavBar = styled.nav`
-  height: 48px;
-  width: 100%;
-  background-color: #fff;
-  box-shadow: 1px 2px 5px #888;
-`
+import React from 'react'
+import ProfilePicture from './profilePicture'
+import picture from '../../assets/images/defaultIcon.png'
+const NavBar = (props) => {
+  return (
+    <div className="nav">
+      <ProfilePicture image={picture}/>
+    </div>
+  )
+}
 
 export default NavBar

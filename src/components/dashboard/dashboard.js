@@ -1,8 +1,8 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 import NavBar from '../common/navbar'
 import SideBar from '../common/sidebar-s'
 import Dock from '../common/dock'
-
+import Post from '../common/post'
 class Dashboard extends React.Component {
   render () {
     return (
@@ -10,6 +10,11 @@ class Dashboard extends React.Component {
         <NavBar />
         <SideBar />
         <Dock />
+        <div className="post-wrapper">
+          <Post title="Hi"/>
+          <Post title="Hey"/>
+          <Post title="Sup"/>
+        </div>
       </div>
     )
   }

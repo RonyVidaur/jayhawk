@@ -1,4 +1,80 @@
+@font-face {
+  font-family: Quicksand;
+  src: url(assets/fonts/Quicksand-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: Quicksand-bold;
+    src: url(assets/fonts/Quicksand-Bold.ttf);
+    }
+
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Quicksand'
+}
+
+.nav {
+  text-align: center;
+  height: 48px;
+  background-color: #fff;
+  box-shadow: 1px 2px 5px #fff;
+  margin-left: 220px;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  margin: 5px;
+  border: 3px solid #3bd684;
+  display: inline;
+  /*margin-left: 10px;*/
+}
+
+.post-wrapper {
+  background: #eceeed;
+  margin-left: 221px;
+  /*height: 100%;*/
+  overflow: hidden;
+
+}
+.card {
+  position: relative;
+  border-radius: 2px;
+  overflow: hidden;
+  background-color: #ffffff;
+  height: 35%;
+  width: 344px;
+  transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+}
+.card:hover {
+  cursor: pointer;
+}
+
+
+.card-medium {
+  margin-left: 15%;
+  margin-top: 20px;
+  box-shadow: 0 8px 7px 0 rgba(0, 0, 0, 0.3), 0 7px 4px 0 rgba(0, 0, 0, 0.19);
+  min-height: 208px;
+  width: 800px;
+}
+
+.card-title {
+  color: #5C5858;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.card-username {
+  font-size: 15px;
+  color: #3bd684;
+  font-family: 'Quicksand-bold';
+  text-align: left;
+  margin-top: 5px;
+  display: inline-block;
+  position: relative;
 }
