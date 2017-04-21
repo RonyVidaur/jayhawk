@@ -11,32 +11,37 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Quicksand'
+  font-family: 'Quicksand-bold'
 }
 
 .nav {
   text-align: center;
   height: 48px;
-  background-color: #fff;
+  background-color: #374761;
   box-shadow: 1px 2px 5px #fff;
   margin-left: 220px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 
 .profile-picture {
   border-radius: 50%;
   height: 32px;
   width: 32px;
-  margin: 5px;
-  border: 3px solid #3bd684;
+  margin: 8px;
+  /*border: 3px solid #3bd684;*/
   display: inline;
   /*margin-left: 10px;*/
 }
 
 .post-wrapper {
-  background: #eceeed;
+  background: #d7dbe7;
   margin-left: 221px;
   /*height: 100%;*/
   overflow: hidden;
+  margin-top: 48px;
 
 }
 .card {
@@ -63,7 +68,7 @@
 }
 
 .card-title {
-  color: #5C5858;
+  color: #373737;
   font-size: 20px;
   margin-top: 20px;
   text-align: center;
